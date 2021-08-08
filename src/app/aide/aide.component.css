@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap");
+* {
+    box-sizing: border-box;
+}
+.rech-con{
+    width: 100wh;
+    height: 150px;
+    background-color: #ebebeb;
+    margin-bottom: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rech {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+.rech input {
+    border:none;
+    width: 100%;
+    line-height: 50px;
+    font-size: 0.9em;
+    padding-left: 30px;
+    font-size: 1.3em;
+}
+.rech input:placeholder-shown{
+    font-size: 1em;
+    color: rgb(155, 155, 155);
+}
+.rech input:focus{
+    outline-color:#76c000 ;
+}
+.rech button{
+    border:none;
+    width: 40%;
+    line-height: 50px;
+    background-color: #76c000;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 1.3em;
+}

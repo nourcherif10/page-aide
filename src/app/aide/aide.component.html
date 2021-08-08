@@ -1,0 +1,122 @@
+<header>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap");
+    * {
+      font-family: "Atkinson Hyperlegible", sans-serif;
+    }
+    #un {
+      margin: 5% 20%;
+    }
+    #azer {
+      background-color: #ebebeb;
+      width: max-content;
+      padding-right: 10%;
+      font-weight: lighter;
+    }
+    #azer ul li {
+      font-size: 1.3rem;
+      padding: 5%;
+      width: 250px;
+    }
+    ul li a {
+      color: #515151;
+    }
+    ul li a:hover {
+      color: #76c000;
+      text-decoration: none;
+    }
+    ul li a:focus {
+      color: #76c000;
+    }
+    #deux {
+      border-style: solid;
+      border-left: none;
+      border-color: rgba(245, 245, 245, 0.527);
+    }
+    #deux ul li {
+      padding: 8%;
+    }
+    .trois h4 {
+      margin-bottom: 4%;
+      font-size: 1.5rem;
+    }
+    @media screen and (max-width: 960px) {
+      #un {
+        margin: 0%;
+        width: 100%;
+      }
+      #azer {
+        font-weight: lighter;
+        width: 100%;
+        padding-left: 30%;
+      }
+      #azer ul li {
+        font-size: 1.3rem;
+        padding: 2%;
+        width: 250px;
+      }
+    }
+  </style>
+</header>
+<body>
+  <!--Rechrche container-->
+  <div class="rech-con">
+    <div class="rech">
+      <input type="text" placeholder="Saisir un mot clé..">
+      <button type="submit">Rechercher</button>
+    </div>
+  </div>
+  <!--FAQ-->
+  <div uk-grid id="un">
+    <div class="uk-width-small@m" id="azer">
+      <ul
+        class="uk-nav uk-nav-default"
+        uk-switcher="connect: #component-nav; animation: uk-animation-fade"
+      >
+        <li><a href="#">Questions Fréquentes</a></li>
+        <li><a href="#">Ma commande </a></li>
+        <li><a href="#">Retrait & Livraison</a></li>
+        <li><a href="#">Ma carte maison</a></li>
+        <li><a href="#">Ma carte maison</a></li>
+        <li><a href="#">Ma carte maison</a></li>
+        <li><a href="#">Ma carte maison</a></li>
+        <li><a href="#">Ma carte maison</a></li>
+        <li><a href="#">Ma carte maison</a></li>
+      </ul>
+    </div>
+    <div class="uk-width-expand@m" id="deux">
+      <ul id="component-nav" class="uk-switcher">
+        <li class="trois">
+          <h4>Questions Fréquentes</h4>
+          <a href="">Comment suivre ma commande ?</a>
+          <a href="" style="padding: 2%"
+            >Comment venir récupérer ma commande en magasin sur rendez vous ?</a
+          >
+          <a href="">Quels sont les moyens de livraison ?</a>
+          <a href=""
+            >Sous quel délai serai-je remboursé suite à mon retour de
+            produit?</a
+          >
+          <a href=""
+            >Quelles sont les modalités pour le retrait 2h en magasin ?</a
+          >
+          <a href="">Comment consulter le stock d'un produit en magasin ?</a>
+          <a href="">Quels sont les conditions d'accès à nos magasins ?</a>
+          <a href="">J’ai besoin de conseils pour utiliser mon produit</a>
+        </li>
+        <li>
+          <h4 style="margin-bottom: 4%; font-size: 1.5rem">Ma commande</h4>
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+        </li>
+        <li>
+          <h4 style="margin-bottom: 4%; font-size: 1.5rem">
+            Retrait & Livraison
+          </h4>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur, sed do eiusmod.
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
